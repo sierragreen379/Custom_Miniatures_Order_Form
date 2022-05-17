@@ -1,155 +1,164 @@
-<header>
-  <h1 id="title">Custom D&D Miniatures</h1>
-  <p id="description">Hand-crafted miniatures to impress your D&D friends!</p>
-</header>
-<img src="https://www.gamersdecide.com/sites/default/files/styles/news_images/public/article_5_main_image.jpg" alt="Set of example D&D figurines.">
-<form id="survey-form" action="#">
-  <section class="your_info">
-  <h2 class="info_header">Your Information</h2>
-    <div class="name_info">
-  <label id="name-label" for="name">Name:</label>
-  <input id="name" type="text" placeholder="Enter your name" required>
-    </div>
-    <div class="email_info">
-  <label id="email-label" for="email">Email:</label>
-  <input id="email" name="email" type="email" placeholder="Enter your email" required>
-    </div>
-  </section>
-  <br>
-  <section class="your_miniature">
-<h2>Your miniature</h2>
-  <p>All miniatures are $60.00 USD.</p>
-  <h3 class="height">Height:</h3>
-  <label id="number-label" for="number">Options are 4", 5", or 6"</label>
-  <input id="number" name="number" type="number" min="4" max="6" placeholder="#">
-    <div id="species_gender">
-  <h3 class="species_title">Species:</h3>
-  <select id="dropdown" name="species" required>
-    <option value="" disabled selected>Select...</option>
-    <option value="human">Human</option>
-    <option value="dragonborn">Dragonborn</option>
-    <option value="tiefling">Tiefling</option>
-    <option value="elf">Elf</option>
-    <option value="half-elf">Half-Elf</option>
-    <option value="halfling">Halfling</option>
-    <option value="dwarf">Dwarf</option>
-    <option value="gnome">Gnome</option>
-    <option value="half-orc">Half-Orc</option>
-    <option value="orc">Orc</option>
-  </select>
-  <br><br>
-      <div class="gender">
-  <label for="male">
-    <input id="male" value="male" type="radio" name="gender">Male
-  </label>
-  <label for="female">
-    <input id="female" value="female" type="radio" name="gender">Female
-  </label>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom D&D Miniatures</title>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Custom D&D Miniatures</h1>
+      <p id="description">Hand-crafted miniatures to impress your D&D friends!</p>
+    </header>
+    <img src="https://www.gamersdecide.com/sites/default/files/styles/news_images/public/article_5_main_image.jpg" alt="Set of example D&D figurines.">
+    <form id="survey-form" action="#">
+      <section class="your_info">
+      <h2 class="info_header">Your Information</h2>
+        <div class="name_info">
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="email_info">
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        </div>
+      </section>
+      <br>
+      <section class="your_miniature">
+    <h2>Your miniature</h2>
+      <p>All miniatures are $60.00 USD.</p>
+      <h3 class="height">Height:</h3>
+      <label id="number-label" for="number">Options are 4", 5", or 6"</label>
+      <input id="number" name="number" type="number" min="4" max="6" placeholder="#">
+        <div id="species_gender">
+      <h3 class="species_title">Species:</h3>
+      <select id="dropdown" name="species" required>
+        <option value="" disabled selected>Select...</option>
+        <option value="human">Human</option>
+        <option value="dragonborn">Dragonborn</option>
+        <option value="tiefling">Tiefling</option>
+        <option value="elf">Elf</option>
+        <option value="half-elf">Half-Elf</option>
+        <option value="halfling">Halfling</option>
+        <option value="dwarf">Dwarf</option>
+        <option value="gnome">Gnome</option>
+        <option value="half-orc">Half-Orc</option>
+        <option value="orc">Orc</option>
+      </select>
+      <br><br>
+          <div class="gender">
+      <label for="male">
+        <input id="male" value="male" type="radio" name="gender">Male
+      </label>
+      <label for="female">
+        <input id="female" value="female" type="radio" name="gender">Female
+      </label>
+          </div>
+        </div>
+      <br>
+        <div id="hair_skin">
+          <div class="hair">
+      <h3 class="hair_header">Hair Color:</h3>
+      <label for="blond">
+        <input id="blond" value="blond" type="radio" name="hair_color">Blond
+      </label>
+      <label for="brown">
+        <input id="brown" value="brown" type="radio" name="hair_color">Brown
+      </label>
+      <label for="black">
+        <input id="black" value="black" type="radio" name="hair_color">Black
+      </label>
+      <label for="red">
+        <input id="red" value="red" type="radio" name="hair_color">Red
+      </label>
+      <label for="other" class="other_hair">
+        <input id="other" value="other" type="radio" name="hair_color">Other:
+      <input type="text" class="other_hair_text" placeholder="Other color">
+        </label>
+            </div>
+      <br>
+          <div class="skin">
+      <h3 class="skin_header">Skin Color:</h3>
+      <label for="fair">
+        <input id="fair" value="fair" type="radio" name="skin_color">Fair
+      </label>
+      <label for="olive">
+        <input id="olive" value="olive" type="radio" name="skin_color">Olive
+      </label>
+      <label for="light_brown">
+        <input id="light_brown" value="light_brown" type="radio" name="skin_color">Light Brown
+      </label>
+      <label for="dark_brown">
+        <input id="dark_brown" value="dark_brown" type="radio" name="skin_color">Dark Brown
+      </label>
+      <label for="other" class="other_skin">
+        <input id="other" value="other" type="radio" name="skin_color">Other:
+      <input type="text" class="other_skin_text" placeholder="Other color">
+        </label>
+            </div>
+        </div>
+      <br><br>
+      <h3>Choose your weapons*:</h3>
+      <div class="weapons">
+      <label for="club">
+        <input id="club" value="club" type="checkbox" name="weapons">Club
+      </label>
+      <label for="staff">
+        <input id="staff" value="staff" type="checkbox" name="weapons">Staff
+      </label>
+      <label for="dagger">
+        <input id="dagger" value="dagger" type="checkbox" name="weapons">Dagger
+      </label>
+      <label for="shortsword">
+        <input id="shortsword" value="shortsword" type="checkbox" name="weapons">Shortsword
+      </label>
+      <label for="longsword">
+        <input id="longsword" value="longsword" type="checkbox" name="weapons">Longsword
+      </label>
+      <label for="greatsword">
+        <input id="greatsword" value="greatsword" type="checkbox" name="weapons">Greatsword
+      </label>
+      <label for="scimitar">
+        <input id="scimitar" value="scimitar" type="checkbox" name="weapons">Scimitar
+      </label>
+      <label for="handaxe">
+        <input id="handaxe" value="handaxe" type="checkbox" name="weapons">Handaxe
+      </label>
+      <label for="battleaxe">
+        <input id="battleaxe" value="battleaxe" type="checkbox" name="weapons">Battleaxe
+      </label>
+      <label for="hammer">
+        <input id="hammer" value="hammer" type="checkbox" name="weapons">Hammer
+      </label>
+      <label for="spear">
+        <input id="spear" value="spear" type="checkbox" name="weapons">Spear
+      </label>
+      <label for="mace">
+        <input id="mace" value="mace" type="checkbox" name="weapons">Mace
+      </label>
+      <label for="sling">
+        <input id="sling" value="sling" type="checkbox" name="weapons">Sling
+      </label>
+      <label for="shortbow_and_arrows">
+        <input id="shortbow_and_arrows" value="shortbow_and_arrows" type="checkbox" name="weapons">Shortbow and Arrows
+      </label>
+      <label for="longbow_and_arrows">
+        <input id="longbow_and_arrows" value="longbow_and_arrows" type="checkbox" name="weapons">Longbow and Arrows
+      </label>
+      <label for="crossbow">
+        <input id="crossbow" value="crossbow" type="checkbox" name="weapons">Crossbow and Arrows
+      </label>  
       </div>
-    </div>
-  <br>
-    <div id="hair_skin">
-      <div class="hair">
-  <h3 class="hair_header">Hair Color:</h3>
-  <label for="blond">
-    <input id="blond" value="blond" type="radio" name="hair_color">Blond
-  </label>
-  <label for="brown">
-    <input id="brown" value="brown" type="radio" name="hair_color">Brown
-  </label>
-  <label for="black">
-    <input id="black" value="black" type="radio" name="hair_color">Black
-  </label>
-  <label for="red">
-    <input id="red" value="red" type="radio" name="hair_color">Red
-  </label>
-  <label for="other" class="other_hair">
-    <input id="other" value="other" type="radio" name="hair_color">Other:
-  <input type="text" class="other_hair_text" placeholder="Other color">
-    </label>
-        </div>
-  <br>
-      <div class="skin">
-  <h3 class="skin_header">Skin Color:</h3>
-  <label for="fair">
-    <input id="fair" value="fair" type="radio" name="skin_color">Fair
-  </label>
-  <label for="olive">
-    <input id="olive" value="olive" type="radio" name="skin_color">Olive
-  </label>
-  <label for="light_brown">
-    <input id="light_brown" value="light_brown" type="radio" name="skin_color">Light Brown
-  </label>
-  <label for="dark_brown">
-    <input id="dark_brown" value="dark_brown" type="radio" name="skin_color">Dark Brown
-  </label>
-  <label for="other" class="other_skin">
-    <input id="other" value="other" type="radio" name="skin_color">Other:
-  <input type="text" class="other_skin_text" placeholder="Other color">
-    </label>
-        </div>
-    </div>
-  <br><br>
-  <h3>Choose your weapons*:</h3>
-  <div class="weapons">
-  <label for="club">
-    <input id="club" value="club" type="checkbox" name="weapons">Club
-  </label>
-  <label for="staff">
-    <input id="staff" value="staff" type="checkbox" name="weapons">Staff
-  </label>
-  <label for="dagger">
-    <input id="dagger" value="dagger" type="checkbox" name="weapons">Dagger
-  </label>
-  <label for="shortsword">
-    <input id="shortsword" value="shortsword" type="checkbox" name="weapons">Shortsword
-  </label>
-  <label for="longsword">
-    <input id="longsword" value="longsword" type="checkbox" name="weapons">Longsword
-  </label>
-  <label for="greatsword">
-    <input id="greatsword" value="greatsword" type="checkbox" name="weapons">Greatsword
-  </label>
-  <label for="scimitar">
-    <input id="scimitar" value="scimitar" type="checkbox" name="weapons">Scimitar
-  </label>
-  <label for="handaxe">
-    <input id="handaxe" value="handaxe" type="checkbox" name="weapons">Handaxe
-  </label>
-  <label for="battleaxe">
-    <input id="battleaxe" value="battleaxe" type="checkbox" name="weapons">Battleaxe
-  </label>
-  <label for="hammer">
-    <input id="hammer" value="hammer" type="checkbox" name="weapons">Hammer
-  </label>
-  <label for="spear">
-    <input id="spear" value="spear" type="checkbox" name="weapons">Spear
-  </label>
-  <label for="mace">
-    <input id="mace" value="mace" type="checkbox" name="weapons">Mace
-  </label>
-  <label for="sling">
-    <input id="sling" value="sling" type="checkbox" name="weapons">Sling
-  </label>
-  <label for="shortbow_and_arrows">
-    <input id="shortbow_and_arrows" value="shortbow_and_arrows" type="checkbox" name="weapons">Shortbow and Arrows
-  </label>
-  <label for="longbow_and_arrows">
-    <input id="longbow_and_arrows" value="longbow_and_arrows" type="checkbox" name="weapons">Longbow and Arrows
-  </label>
-  <label for="crossbow">
-    <input id="crossbow" value="crossbow" type="checkbox" name="weapons">Crossbow and Arrows
-  </label>  
-  </div>
-  <p>*If only one weapon is chosen, the miniature will be holding it.</p>
-  <p>**If more than one weapon is chosen, all weapons will be strapped to the miniature's body except the one of your choice:
-   <input id="which_one" type="text" placeholder="Enter weapon held"></p>
-    <h3>Inscription:</h3>
-  <p>Would you like an inscription on the bottom of the miniature?</p>
-  <label for="inscription">
-    <textarea id="inscription" name="inscription" maxlength="100" placeholder="Enter your inscription here"></textarea>
-  </label>
-  <br><br>
-  <button id="submit" type="submit">Proceed to payment</button>
-  </section>
-</form>
+      <p>*If only one weapon is chosen, the miniature will be holding it.</p>
+      <p>**If more than one weapon is chosen, all weapons will be strapped to the miniature's body except the one of your choice:
+       <input id="which_one" type="text" placeholder="Enter weapon held"></p>
+        <h3>Inscription:</h3>
+      <p>Would you like an inscription on the bottom of the miniature?</p>
+      <label for="inscription">
+        <textarea id="inscription" name="inscription" maxlength="100" placeholder="Enter your inscription here"></textarea>
+      </label>
+      <br><br>
+      <button id="submit" type="submit">Proceed to payment</button>
+      </section>
+    </form>
+  </body>
+</html>

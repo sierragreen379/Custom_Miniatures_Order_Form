@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+:root {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+}
+
+#description {
+  font-size: 18px;
+}
+
+header {
+  background-color: rgba(63, 71, 86, 0.4);
+  border: solid black 4px;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.your_info {
+  background: rgba(63, 71, 86, 0.3);
+  border: solid black 2px;
+  padding: 0 10px 25px 10px;
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "name email";
+  grid-template-columns: 50% 50%;
+}
+
+.info_header {
+  grid-area: header;
+}
+
+.name_info {
+  grid-area: name;
+}
+
+.email_info {
+  grid-area: email;
+}
+
+#name {
+  height: 18px;
+  width: 80%;
+}
+
+#email {
+  height: 18px;
+  width: 80%;
+}
+
+.your_miniature {
+  background: rgba(63, 71, 86, 0.3);
+  border: solid black 2px;
+  padding: 0 10px 20px 10px;
+}
+
+.height {
+  margin-top: 35px;
+}
+
+#number {
+  font-size: 15px;
+}
+
+#species_gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.species_title {
+  margin-top: 45px;
+}
+
+#dropdown {
+  margin: 45px 15px 15px 5px;
+  height: 24px;
+  width: auto;
+  font-size: 15px;
+}
+
+.gender {
+  margin: 45px 0 15px 0;
+}
+
+@media (max-width: 500px) {
+  #species_gender {
+    display: inline;
+  }
+  #dropdown {
+    margin: 0;
+  }
+  .gender {
+    margin: 0;
+  }
+}
+
+#hair_skin {
+  display: grid;
+  grid-template-areas:
+    "hair skin";
+  grid-template-rows: 80px;
+}
+
+.hair {
+  grid-area: hair;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "1 2 3 4"
+    "5 5 5 5";
+  grid-row-gap: 1px;
+  justify-items: start;
+}
+
+.hair_header {
+  grid-area: header;
+  justify-self: center;
+}
+
+#blond {
+  grid-area: 1;
+}
+
+#brown {
+  grid-area: 2;
+}
+
+#black {
+  grid-area: 3;
+}
+
+#red {
+  grid-area: 4;
+}
+
+.other_hair {
+  grid-area: 5;
+  grid-column: 1/5;
+}
+
+.other_hair_text {
+  width: 245px;
+  font-size: 15px;
+}
+
+.skin {
+  grid-area: skin;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "A B C D"
+    "E E E E";
+  grid-row-gap: 1px;
+  justify-items: start;
+}
+
+.skin_header {
+  grid-area: header;
+  justify-self: center;
+}
+
+#fair {
+  grid-area: A;
+}
+
+#olive {
+  grid-area: B;
+}
+
+#light_brown {
+  grid-area: C;
+}
+
+#dark-brown {
+  grid-area: D;
+}
+
+.other_skin {
+  grid-area: E;
+  grid-column: 1/5;
+  line-height: 25px;
+}
+
+.other_skin_text {
+  width: 245px;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  #hair_skin {
+    display: inline;
+  }
+}
+
+.weapons {
+  display: grid;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  padding-left: 2%;
+  grid-template-columns: repeat(4, auto);
+  grid-row-gap: 5px;
+  justify-items: start;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .weapons {
+    padding-left: 5%;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+  }
+}
+
+#which_one {
+  width: 25%;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  #which_one {
+    width: 50%;
+  }
+}
+
+#inscription {
+  width: 75%;
+  height: 50px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+#submit {
+  width: 35%;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 5%;
+}
+
+@media (max-width: 700px) {
+  #submit {
+    width: auto;
+    background-color: #f1f1f1;
+    color: black;
+    border: solid black 1px;
+  }
+}
